@@ -12,6 +12,9 @@ public class UserRole {
     private String username;
     private String role;
 
+    public UserRole() {
+    }
+
     public UserRole(String username, String role) {
         this.username = username;
         this.role = role;
@@ -39,5 +42,14 @@ public class UserRole {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    @Override
+    public String toString() {
+        return "UserRole{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", role='" + role + '\'' +
+                '}';
     }
 }
